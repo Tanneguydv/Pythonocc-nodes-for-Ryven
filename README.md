@@ -17,7 +17,11 @@ https://www.youtube.com/watch?v=lUNYstrfvmg
 ![exemple_tutogithub_1](https://user-images.githubusercontent.com/81742654/131112006-300cb113-ad9c-406c-9bd4-4ce6629f54ee.jpg)
 
 It's just a beginning to explore the possibilities given by matching the two, I've just coded simple functions to see how it works and how it should be to perform complex operations.
+
+
+# Contribute !
 The nodes are of course open for contribution, as there are thousands of functions in OpenCascade and thousands of way to developp properly the nodes!
+
 The functions yet implemented in the nodes.py file are :
 
 `Gp_nodes = Pnt_Node, Dir_Node, Vec_Node, Ax2_Node, Pln_Node, Trsf_Node,`
