@@ -211,7 +211,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "PythonOCC.display_Node",
+                        "identifier": "PythonOCC.Display_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
                             "add input": {
@@ -240,7 +240,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "PythonOCC.fillet_Node",
+                        "identifier": "PythonOCC.Fillet_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
                             "add input": {
@@ -898,7 +898,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "PythonOCC.fillet_Node",
+                        "identifier": "PythonOCC.Fillet_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
                             "add input": {
