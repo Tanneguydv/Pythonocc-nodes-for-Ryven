@@ -4,12 +4,12 @@
     },
     "required packages": [
         {
-            "name": "PythonOCC",
-            "dir": "C:/Users/tdevillemagne/Documents/00-DEMONSTRATEUR/dev3D/Ryven-master/Ryven/packages/PythonOCC"
-        },
-        {
             "name": "std",
             "dir": "C:/Users/tdevillemagne/Documents/00-DEMONSTRATEUR/dev3D/Ryven-master/Ryven/packages/std"
+        },
+        {
+            "name": "PythonOCC",
+            "dir": "C:/Users/tdevillemagne/Documents/00-DEMONSTRATEUR/dev3D/Ryven-master/Ryven/packages/PythonOCC"
         }
     ],
     "macro scripts": [],
@@ -156,19 +156,14 @@
                         "identifier": "PythonOCC.Box_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             },
                             "remove input 2": {
-                                "method": "remove_operand_input",
                                 "data": 2
                             }
                         },
@@ -214,11 +209,8 @@
                         "identifier": "PythonOCC.Display_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             }
                         },
@@ -243,15 +235,11 @@
                         "identifier": "PythonOCC.Fillet_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             }
                         },
@@ -335,19 +323,14 @@
                         "identifier": "PythonOCC.Cylinder_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             },
                             "remove input 2": {
-                                "method": "remove_operand_input",
                                 "data": 2
                             }
                         },
@@ -439,15 +422,11 @@
                         "identifier": "PythonOCC.Ax2_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             }
                         },
@@ -485,19 +464,14 @@
                         "identifier": "PythonOCC.Pnt_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             },
                             "remove input 2": {
-                                "method": "remove_operand_input",
                                 "data": 2
                             }
                         },
@@ -543,19 +517,14 @@
                         "identifier": "PythonOCC.Dir_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             },
                             "remove input 2": {
-                                "method": "remove_operand_input",
                                 "data": 2
                             }
                         },
@@ -693,19 +662,14 @@
                         "identifier": "PythonOCC.Cylinder_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             },
                             "remove input 2": {
-                                "method": "remove_operand_input",
                                 "data": 2
                             }
                         },
@@ -751,15 +715,11 @@
                         "identifier": "PythonOCC.Ax2_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             }
                         },
@@ -797,19 +757,14 @@
                         "identifier": "PythonOCC.Pnt_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             },
                             "remove input 2": {
-                                "method": "remove_operand_input",
                                 "data": 2
                             }
                         },
@@ -855,15 +810,11 @@
                         "identifier": "PythonOCC.Fuse_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             }
                         },
@@ -901,15 +852,11 @@
                         "identifier": "PythonOCC.Fillet_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             }
                         },
@@ -947,15 +894,11 @@
                         "identifier": "PythonOCC.Cut_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             }
                         },
@@ -993,15 +936,11 @@
                         "identifier": "PythonOCC.Trsf_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             }
                         },
@@ -1039,19 +978,14 @@
                         "identifier": "PythonOCC.Vec_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             },
                             "remove input 2": {
-                                "method": "remove_operand_input",
                                 "data": 2
                             }
                         },
@@ -1134,15 +1068,11 @@
                         "identifier": "PythonOCC.ExportStl_Node",
                         "state data": "gAN9cQAu",
                         "special actions": {
-                            "add input": {
-                                "method": "add_operand_input"
-                            },
+                            "add input": {},
                             "remove input 0": {
-                                "method": "remove_operand_input",
                                 "data": 0
                             },
                             "remove input 1": {
-                                "method": "remove_operand_input",
                                 "data": 1
                             }
                         },
@@ -1162,7 +1092,7 @@
                                 "dtype": "DType.Data",
                                 "dtype state": "gAN9cQAoWAcAAABkZWZhdWx0cQFOWAMAAABkb2NxAlgAAAAAcQNYBgAAAGJvdW5kc3EETlgEAAAAc2l6ZXEFWAEAAABzcQZ1Lg==",
                                 "has widget": true,
-                                "widget data": "gAN9cQBYBAAAAHRleHRxAVgIAAAAdGVzdC5zdGxxAnMu"
+                                "widget data": "gAN9cQBYBAAAAHRleHRxAVgEAAAAbW9sZHECcy4="
                             }
                         ],
                         "outputs": [
@@ -1178,7 +1108,7 @@
                     },
                     {
                         "identifier": "built_in.Val_Node",
-                        "state data": "gAN9cQBYAwAAAHZhbHEBWAgAAAB0ZXN0LnN0bHECcy4=",
+                        "state data": "gAN9cQBYAwAAAHZhbHEBWAQAAABtb2xkcQJzLg==",
                         "special actions": {
                             "edit val via dialog": {
                                 "method": "action_edit_via_dialog"
@@ -1194,7 +1124,7 @@
                         ],
                         "pos x": 1114.4883730762929,
                         "pos y": 183.8478262491583,
-                        "main widget data": "gAN9cQBYBAAAAHRleHRxAVgIAAAAdGVzdC5zdGxxAnMu",
+                        "main widget data": "gAN9cQBYBAAAAHRleHRxAVgEAAAAbW9sZHECcy4=",
                         "unconnected ports hidden": false,
                         "collapsed": false
                     }
