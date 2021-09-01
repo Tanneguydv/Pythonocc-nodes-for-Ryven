@@ -612,7 +612,7 @@ class ExportStep_Node(PythonOCCNodeBase):
         shape, filename = self.get_inputs()
         step_writer = STEPControl_Writer()
         step_writer.Transfer(shape, STEPControl_AsIs)
-        status = step_writer.Write(str(filename))
+        status = step_writer.Write(str(filename)+'.stp')
 
 
 class ExportStl_Node(PythonOCCNodeBase):
@@ -636,7 +636,7 @@ class ExportStl_Node(PythonOCCNodeBase):
 
     def update_event(self, inp=-1):
         shape, filename = self.get_inputs()
-        status = write_stl_file(shape, filename, mode="ascii", linear_deflection=0.9, angular_deflection=0.5)
+        status = write_stl_file(shape, str(filename)+'.stl', mode="ascii", linear_deflection=0.9, angular_deflection=0.5)
 
 
 Tools_nodes = [
