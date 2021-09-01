@@ -35,9 +35,54 @@ from OCC.Core.BRepFilletAPI import \
 from OCC.Extend.TopologyUtils import \
     TopologyExplorer
 
+# 3D Viewer ------------------------------------------
 
 from OCC.Display.SimpleGui import init_display
 display, start_display, add_menu, add_function_to_menu = init_display()
+add_menu('View')
+
+def Fit_All():
+    display.FitAll()
+
+def Iso_View():
+    display.View_Iso()
+    display.FitAll()
+
+def Top_View():
+    display.View_Top()
+    display.FitAll()
+    
+def Left_View():
+    display.View_Left()
+    display.FitAll()
+    
+def Front_View():
+    display.View_Front()
+    display.FitAll()
+
+def Right_View():
+    display.View_Right()
+    display.FitAll()
+
+def Bottom_View():
+    display.View_Bottom()
+    display.FitAll()
+
+def Rear_View():
+    display.View_Rear()
+    display.FitAll()
+
+    
+add_function_to_menu('View', Fit_All)
+add_function_to_menu('View', Iso_View)
+add_function_to_menu('View', Top_View)
+add_function_to_menu('View', Left_View)
+add_function_to_menu('View', Front_View)
+add_function_to_menu('View', Right_View)
+add_function_to_menu('View', Bottom_View)
+add_function_to_menu('View', Rear_View)
+
+# -----------------------------------------------------
 
 
 class PythonOCCNodeBase(Node):
