@@ -26,7 +26,11 @@ The nodes are of course open for contribution, as there are thousands of functio
 
 The functions yet implemented in the nodes.py file are :
 
-`Gp_nodes = Pnt_Node, Dir_Node, Vec_Node, Ax2_Node, Pln_Node, Trsf_Node,`
+`Gp_nodes = Pnt_Node, DeconstructPnt_Node, PointZero_Node,Dir_Node, Vec_Node, DX_Node, DY_Node, DZ_Node,Ax2_Node, Pln_Node, Trsf_Node, Move2pts_Node, MidPoint_Node,`
+
+`BRepBuilderAPI_nodes = TwoPtsEdge_Node, Wire_Node, WireFillet2d_Node, DiscretizeWire_Node,`
+
+`BRepOffsetAPI_nodes = Pipe_Node,`
 
 `BRepPrimAPI_nodes = Box_Node, Sphere_Node, Cylinder_Node,`
 
@@ -34,9 +38,15 @@ The functions yet implemented in the nodes.py file are :
 
 `BRepFilletAPI_nodes = fillet_Node,`
 
-`Display_nodes =  display_Node,`
+`GeomAPI_nodes = PointsSurface_Node,`
 
-`Tools_nodes = List_Node, ExportStep_Node, ExportStl_Node,`
+`TopExplorer_nodes = TopExplorer_Node,`
+
+`Display_nodes =  display_Node, Color_Node,`
+
+`Tools_nodes = List_Node, ListLength_Node, FlattenList_Node, ListItem_Node, RepeatData_Node, Serie_Node, ShiftList_Node,`
+
+`DataExchange_nodes = ExportStep_Node, ImportStep_Node, ExportStl_Node, ImportStl_Node,`
 
 Each "nodes" family is a class with a color attributed. Node's name are nearly the same than in Pythonocc
 
