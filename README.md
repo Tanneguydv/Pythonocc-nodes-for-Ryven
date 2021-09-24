@@ -20,6 +20,9 @@ You can load this project saved in this file : `demo_example.json`
 
 It's just a beginning to explore the possibilities given by matching the two, I've just coded simple functions to see how it works and how it should be to perform complex operations.
 
+another example:
+![torus_example](https://user-images.githubusercontent.com/81742654/134700246-54ce5366-cb8f-43c1-acd9-fdd091cd802f.jpg)
+
 
 # Contribute !
 The nodes are of course open for contribution, as there are thousands of functions in OpenCascade and thousands of way to developp properly the nodes!
