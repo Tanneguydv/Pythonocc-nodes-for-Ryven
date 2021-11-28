@@ -1,0 +1,1726 @@
+{
+    "general info": {
+        "type": "Ryven project file"
+    },
+    "required packages": [
+        {
+            "name": "PythonOCC",
+            "dir": "C:/Users/nutri/projects/ryven projects/Pythonocc-nodes-for-Ryven/PythonOCC"
+        },
+        {
+            "name": "std",
+            "dir": "C:\\Users\\nutri\\projects\\ryven projects\\Ryven\\ryven\\example_nodes\\std"
+        }
+    ],
+    "scripts": [
+        {
+            "title": "hello world",
+            "variables": {},
+            "flow": {
+                "algorithm mode": "data opt",
+                "nodes": [
+                    {
+                        "identifier": "built_in.Val_Node",
+                        "version": "v0.1",
+                        "state data": "gASVDAAAAAAAAAB9lIwDdmFslEsecy4=",
+                        "additional data": {
+                            "special actions": {
+                                "edit val via dialog": {
+                                    "method": "action_edit_via_dialog"
+                                }
+                            },
+                            "display title": ""
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 8,
+                                "val": "gARLHi4=",
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNgAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslEsejANkb2OUjACUjAZib3VuZHOUTowEc2l6ZZSMAXOUdS4=",
+                                "has widget": true,
+                                "widget data": "gASVEAAAAAAAAAB9lIwEdGV4dJSMAjMwlHMu"
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 9
+                            }
+                        ],
+                        "GID": 7,
+                        "pos x": 190.0,
+                        "pos y": 112.0,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "built_in.Val_Node",
+                        "version": "v0.1",
+                        "state data": "gASVDAAAAAAAAAB9lIwDdmFslEsKcy4=",
+                        "additional data": {
+                            "special actions": {
+                                "edit val via dialog": {
+                                    "method": "action_edit_via_dialog"
+                                }
+                            },
+                            "display title": ""
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 11,
+                                "val": "gARLCi4=",
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNgAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslEsKjANkb2OUjACUjAZib3VuZHOUTowEc2l6ZZSMAXOUdS4=",
+                                "has widget": true,
+                                "widget data": "gASVEAAAAAAAAAB9lIwEdGV4dJSMAjEwlHMu"
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 12
+                            }
+                        ],
+                        "GID": 10,
+                        "pos x": 190.22819355804288,
+                        "pos y": 219.20334886820834,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "built_in.Val_Node",
+                        "version": "v0.1",
+                        "state data": "gASVDAAAAAAAAAB9lIwDdmFslEsCcy4=",
+                        "additional data": {
+                            "special actions": {
+                                "edit val via dialog": {
+                                    "method": "action_edit_via_dialog"
+                                }
+                            },
+                            "display title": ""
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 14,
+                                "val": "gARLAi4=",
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNgAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslEsCjANkb2OUjACUjAZib3VuZHOUTowEc2l6ZZSMAXOUdS4=",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATKUcy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 15
+                            }
+                        ],
+                        "GID": 13,
+                        "pos x": 192.74777228066597,
+                        "pos y": 328.8050233023125,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "built_in.Val_Node",
+                        "version": "v0.1",
+                        "state data": "gASVDAAAAAAAAAB9lIwDdmFslEsBcy4=",
+                        "additional data": {
+                            "special actions": {
+                                "edit val via dialog": {
+                                    "method": "action_edit_via_dialog"
+                                }
+                            },
+                            "display title": ""
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 17,
+                                "val": "gARLAS4=",
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNgAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslEsBjANkb2OUjACUjAZib3VuZHOUTowEc2l6ZZSMAXOUdS4=",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATGUcy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 18
+                            }
+                        ],
+                        "GID": 16,
+                        "pos x": 185.18903611279669,
+                        "pos y": 428.32838284592424,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "built_in.Val_Node",
+                        "version": "v0.1",
+                        "state data": "gASVDAAAAAAAAAB9lIwDdmFslEsAcy4=",
+                        "additional data": {
+                            "special actions": {
+                                "edit val via dialog": {
+                                    "method": "action_edit_via_dialog"
+                                }
+                            },
+                            "display title": ""
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 20,
+                                "val": "gARLAC4=",
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNgAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslEsAjANkb2OUjACUjAZib3VuZHOUTowEc2l6ZZSMAXOUdS4=",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATCUcy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 21
+                            }
+                        ],
+                        "GID": 19,
+                        "pos x": 187.70861483541975,
+                        "pos y": 529.1115317508477,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "built_in.Val_Node",
+                        "version": "v0.1",
+                        "state data": "gASVDQAAAAAAAAB9lIwDdmFslIwAlHMu",
+                        "additional data": {
+                            "special actions": {
+                                "edit val via dialog": {
+                                    "method": "action_edit_via_dialog"
+                                }
+                            },
+                            "display title": ""
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 23,
+                                "val": "gASVBAAAAAAAAACMAJQu",
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNgAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslIwAlIwDZG9jlGgDjAZib3VuZHOUTowEc2l6ZZSMAXOUdS4=",
+                                "has widget": true,
+                                "widget data": "gASVDgAAAAAAAAB9lIwEdGV4dJSMAJRzLg=="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 24
+                            }
+                        ],
+                        "GID": 22,
+                        "pos x": 192.7477722806659,
+                        "pos y": 633.6740487397055,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Box_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                },
+                                "remove input 2": {
+                                    "data": 2
+                                }
+                            },
+                            "display title": "box"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 26,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEAAAAAAAAAB9lIwEdGV4dJSMAjMwlHMu"
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 27,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEAAAAAAAAAB9lIwEdGV4dJSMAjMwlHMu"
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 28,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEAAAAAAAAAB9lIwEdGV4dJSMAjEwlHMu"
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 29
+                            }
+                        ],
+                        "GID": 25,
+                        "pos x": 473.68079985313983,
+                        "pos y": 109.60167443410417,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Display_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                }
+                            },
+                            "display title": "display"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 31,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVRAAAAAAAAAB9lIwEdGV4dJSMNls8Y2xhc3MgJ1RvcG9EU19Db21wb3VuZCc+LCA8Y2xhc3MgJ1RvcG9EU19Db21wb3VuZCc+XZRzLg=="
+                            }
+                        ],
+                        "outputs": [],
+                        "GID": 30,
+                        "pos x": 1412.2238740302384,
+                        "pos y": 138.57682974426962,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Fillet_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                }
+                            },
+                            "display title": "fillet"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 33,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVJAAAAAAAAAB9lIwEdGV4dJSMFjxjbGFzcyAnVG9wb0RTX1NvbGlkJz6Ucy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 34,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATGUcy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 35
+                            }
+                        ],
+                        "GID": 32,
+                        "pos x": 692.8841487213481,
+                        "pos y": 119.67998932459648,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "std.Divide_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {
+                                    "method": "add_operand_input"
+                                },
+                                "remove input 0": {
+                                    "method": "remove_operand_input",
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "method": "remove_operand_input",
+                                    "data": 1
+                                }
+                            },
+                            "display title": "/"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 37,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEAAAAAAAAAB9lIwEdGV4dJSMAjMwlHMu"
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 38,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATKUcy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 39
+                            }
+                        ],
+                        "GID": 36,
+                        "pos x": 531.6311104734709,
+                        "pos y": 296.0504999082124,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Cylinder_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                },
+                                "remove input 2": {
+                                    "data": 2
+                                }
+                            },
+                            "display title": "cylinder"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 41,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVHgAAAAAAAAB9lIwEdGV4dJSMEDxjbGFzcyAnZ3BfQXgyJz6Ucy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 42,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEgAAAAAAAAB9lIwEdGV4dJSMBDE1LjCUcy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 43,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEQAAAAAAAAB9lIwEdGV4dJSMAzUuMJRzLg=="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 44
+                            }
+                        ],
+                        "GID": 40,
+                        "pos x": 1233.333784724,
+                        "pos y": 395.5738594518242,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "std.Divide_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {
+                                    "method": "add_operand_input"
+                                },
+                                "remove input 0": {
+                                    "method": "remove_operand_input",
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "method": "remove_operand_input",
+                                    "data": 1
+                                }
+                            },
+                            "display title": "/"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 46,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEAAAAAAAAAB9lIwEdGV4dJSMAjEwlHMu"
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 47,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATKUcy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 48
+                            }
+                        ],
+                        "GID": 45,
+                        "pos x": 503.9157445246168,
+                        "pos y": 454.7839594334667,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Ax2_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                }
+                            },
+                            "display title": "Ax2"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 50,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVHgAAAAAAAAB9lIwEdGV4dJSMEDxjbGFzcyAnZ3BfUG50Jz6Ucy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 51,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVHgAAAAAAAAB9lIwEdGV4dJSMEDxjbGFzcyAnZ3BfRGlyJz6Ucy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 52
+                            }
+                        ],
+                        "GID": 49,
+                        "pos x": 930.9843380092295,
+                        "pos y": 374.157440309528,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Pnt_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                },
+                                "remove input 2": {
+                                    "data": 2
+                                }
+                            },
+                            "display title": "point"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 54,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEgAAAAAAAAB9lIwEdGV4dJSMBDE1LjCUcy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 55,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEgAAAAAAAAB9lIwEdGV4dJSMBDE1LjCUcy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 56,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEQAAAAAAAAB9lIwEdGV4dJSMAzUuMJRzLg=="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 57
+                            }
+                        ],
+                        "GID": 53,
+                        "pos x": 710.5211997797098,
+                        "pos y": 345.18228499936254,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Dir_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                },
+                                "remove input 2": {
+                                    "data": 2
+                                }
+                            },
+                            "display title": "dir"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 59,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATCUcy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 60,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATCUcy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 61,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATGUcy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 62
+                            }
+                        ],
+                        "GID": 58,
+                        "pos x": 700.4428848892176,
+                        "pos y": 525.332163666913,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.List_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {
+                                    "method": "add_operand_input"
+                                },
+                                "rem input": {
+                                    "0": {
+                                        "method": "remove_operand_input",
+                                        "data": 0
+                                    },
+                                    "1": {
+                                        "method": "remove_operand_input",
+                                        "data": 1
+                                    }
+                                }
+                            },
+                            "display title": "List"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 64,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVJwAAAAAAAAB9lIwEdGV4dJSMGTxjbGFzcyAnVG9wb0RTX0NvbXBvdW5kJz6Ucy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 65,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVJwAAAAAAAAB9lIwEdGV4dJSMGTxjbGFzcyAnVG9wb0RTX0NvbXBvdW5kJz6Ucy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 66
+                            }
+                        ],
+                        "GID": 63,
+                        "pos x": 1127.346090787474,
+                        "pos y": 280.63712667926774,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "std.Divide_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {
+                                    "method": "add_operand_input"
+                                },
+                                "remove input 0": {
+                                    "method": "remove_operand_input",
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "method": "remove_operand_input",
+                                    "data": 1
+                                }
+                            },
+                            "display title": "/"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 68,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEgAAAAAAAAB9lIwEdGV4dJSMBDE1LjCUcy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 69,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATKUcy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 70
+                            }
+                        ],
+                        "GID": 67,
+                        "pos x": 621.0761551265902,
+                        "pos y": 697.9233061665942,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Cylinder_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                },
+                                "remove input 2": {
+                                    "data": 2
+                                }
+                            },
+                            "display title": "cylinder"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 72,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVHgAAAAAAAAB9lIwEdGV4dJSMEDxjbGFzcyAnZ3BfQXgyJz6Ucy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 73,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEAAAAAAAAAB9lIwEdGV4dJSMAjEwlHMu"
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 74,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEQAAAAAAAAB9lIwEdGV4dJSMAzUuMJRzLg=="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 75
+                            }
+                        ],
+                        "GID": 71,
+                        "pos x": 1318.9994612931844,
+                        "pos y": 666.4285721338057,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Ax2_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                }
+                            },
+                            "display title": "Ax2"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 77,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVHgAAAAAAAAB9lIwEdGV4dJSMEDxjbGFzcyAnZ3BfUG50Jz6Ucy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 78,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVHgAAAAAAAAB9lIwEdGV4dJSMEDxjbGFzcyAnZ3BfRGlyJz6Ucy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 79
+                            }
+                        ],
+                        "GID": 76,
+                        "pos x": 1001.5325422426758,
+                        "pos y": 657.6100466046249,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Pnt_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                },
+                                "remove input 2": {
+                                    "data": 2
+                                }
+                            },
+                            "display title": "point"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 81,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEgAAAAAAAAB9lIwEdGV4dJSMBDE1LjCUcy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 82,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEgAAAAAAAAB9lIwEdGV4dJSMBDE1LjCUcy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 83,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATCUcy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 84
+                            }
+                        ],
+                        "GID": 80,
+                        "pos x": 788.6281401810254,
+                        "pos y": 709.2614104183982,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Fuse_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                }
+                            },
+                            "display title": "fuse"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 86,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVJAAAAAAAAAB9lIwEdGV4dJSMFjxjbGFzcyAnVG9wb0RTX1NvbGlkJz6Ucy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 87,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVJAAAAAAAAAB9lIwEdGV4dJSMFjxjbGFzcyAnVG9wb0RTX1NvbGlkJz6Ucy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 88
+                            }
+                        ],
+                        "GID": 85,
+                        "pos x": 1401.4982273193373,
+                        "pos y": 522.5309025761003,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Fillet_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                }
+                            },
+                            "display title": "fillet"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 90,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVJwAAAAAAAAB9lIwEdGV4dJSMGTxjbGFzcyAnVG9wb0RTX0NvbXBvdW5kJz6Ucy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 91,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATGUcy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 92
+                            }
+                        ],
+                        "GID": 89,
+                        "pos x": 1566.2694654870154,
+                        "pos y": 303.56268985326136,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Cut_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                }
+                            },
+                            "display title": "cut"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 94,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVJwAAAAAAAAB9lIwEdGV4dJSMGTxjbGFzcyAnVG9wb0RTX0NvbXBvdW5kJz6Ucy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 95,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVJwAAAAAAAAB9lIwEdGV4dJSMGTxjbGFzcyAnVG9wb0RTX0NvbXBvdW5kJz6Ucy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 96
+                            }
+                        ],
+                        "GID": 93,
+                        "pos x": 913.53842345512,
+                        "pos y": 114.0141558134315,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Trsf_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                }
+                            },
+                            "display title": "Transform"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 98,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVJwAAAAAAAAB9lIwEdGV4dJSMGTxjbGFzcyAnVG9wb0RTX0NvbXBvdW5kJz6Ucy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 99,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVHgAAAAAAAAB9lIwEdGV4dJSMEDxjbGFzcyAnZ3BfVmVjJz6Ucy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 100
+                            }
+                        ],
+                        "GID": 97,
+                        "pos x": 1624.7017203413989,
+                        "pos y": 568.6456021194896,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.Vec_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                },
+                                "remove input 2": {
+                                    "data": 2
+                                }
+                            },
+                            "display title": "Vector"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 102,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATCUcy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 103,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwEdGV4dJSMATCUcy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 104,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVEwAAAAAAAAB9lIwEdGV4dJSMBTEzLjY4lHMu"
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 105
+                            }
+                        ],
+                        "GID": 101,
+                        "pos x": 1499.2861489466243,
+                        "pos y": 796.6739137463526,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "std.Slider_Node",
+                        "version": null,
+                        "state data": "gASVEwAAAAAAAAB9lIwDdmFslEc/3S8an752yXMu",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "slider"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "scl",
+                                "GID": 107,
+                                "val": "gARLHi4=",
+                                "dtype": "DType.Integer",
+                                "dtype state": "gASVLAAAAAAAAAB9lCiMB2RlZmF1bHSUSwGMA3ZhbJRLAIwDZG9jlIwAlIwGYm91bmRzlE51Lg==",
+                                "has widget": true,
+                                "widget data": "gASVDAAAAAAAAAB9lIwDdmFslEsecy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "round",
+                                "GID": 108,
+                                "val": "gAROLg==",
+                                "dtype": "DType.Boolean",
+                                "dtype state": "gASVKgAAAAAAAAB9lCiMB2RlZmF1bHSUiYwDdmFslImMA2RvY5SMAJSMBmJvdW5kc5ROdS4=",
+                                "has widget": true,
+                                "widget data": "gASVDwAAAAAAAAB9lIwHY2hlY2tlZJSJcy4="
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 109
+                            }
+                        ],
+                        "GID": 106,
+                        "pos x": 1024.7022253732155,
+                        "pos y": 893.5859461877693,
+                        "main widget data": "gASVDQAAAAAAAAB9lIwDdmFslE3IAXMu",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "PythonOCC.ExportStl_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {
+                                "add input": {},
+                                "remove input 0": {
+                                    "data": 0
+                                },
+                                "remove input 1": {
+                                    "data": 1
+                                }
+                            },
+                            "display title": "ExportStl"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 111,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVJwAAAAAAAAB9lIwEdGV4dJSMGTxjbGFzcyAnVG9wb0RTX0NvbXBvdW5kJz6Ucy4="
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 112,
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVNQAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslE6MA2RvY5SMAJSMBmJvdW5kc5ROjARzaXpllIwBc5R1Lg==",
+                                "has widget": true,
+                                "widget data": "gASVFgAAAAAAAAB9lIwEdGV4dJSMCHRlc3Quc3RslHMu"
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 113
+                            }
+                        ],
+                        "GID": 110,
+                        "pos x": 1274.1081912150971,
+                        "pos y": 81.23508601706993,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "built_in.Val_Node",
+                        "version": "v0.1",
+                        "state data": "gASVFQAAAAAAAAB9lIwDdmFslIwIdGVzdC5zdGyUcy4=",
+                        "additional data": {
+                            "special actions": {
+                                "edit val via dialog": {
+                                    "method": "action_edit_via_dialog"
+                                }
+                            },
+                            "display title": ""
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 115,
+                                "val": "gASVDAAAAAAAAACMCHRlc3Quc3RslC4=",
+                                "dtype": "DType.Data",
+                                "dtype state": "gASVPwAAAAAAAAB9lCiMB2RlZmF1bHSUTowDdmFslIwIdGVzdC5zdGyUjANkb2OUjACUjAZib3VuZHOUTowEc2l6ZZSMAXOUdS4=",
+                                "has widget": true,
+                                "widget data": "gASVFgAAAAAAAAB9lIwEdGV4dJSMCHRlc3Quc3RslHMu"
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 116
+                            }
+                        ],
+                        "GID": 114,
+                        "pos x": 1114.4883730762929,
+                        "pos y": 183.8478262491583,
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    }
+                ],
+                "connections": [
+                    {
+                        "GID": 117,
+                        "parent node index": 0,
+                        "output port index": 0,
+                        "connected node": 6,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 118,
+                        "parent node index": 0,
+                        "output port index": 0,
+                        "connected node": 6,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 119,
+                        "parent node index": 0,
+                        "output port index": 0,
+                        "connected node": 9,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 120,
+                        "parent node index": 1,
+                        "output port index": 0,
+                        "connected node": 6,
+                        "connected input port index": 2
+                    },
+                    {
+                        "GID": 121,
+                        "parent node index": 1,
+                        "output port index": 0,
+                        "connected node": 11,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 122,
+                        "parent node index": 1,
+                        "output port index": 0,
+                        "connected node": 17,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 123,
+                        "parent node index": 2,
+                        "output port index": 0,
+                        "connected node": 9,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 124,
+                        "parent node index": 2,
+                        "output port index": 0,
+                        "connected node": 11,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 125,
+                        "parent node index": 2,
+                        "output port index": 0,
+                        "connected node": 16,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 126,
+                        "parent node index": 3,
+                        "output port index": 0,
+                        "connected node": 8,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 127,
+                        "parent node index": 3,
+                        "output port index": 0,
+                        "connected node": 14,
+                        "connected input port index": 2
+                    },
+                    {
+                        "GID": 128,
+                        "parent node index": 3,
+                        "output port index": 0,
+                        "connected node": 21,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 129,
+                        "parent node index": 4,
+                        "output port index": 0,
+                        "connected node": 14,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 130,
+                        "parent node index": 4,
+                        "output port index": 0,
+                        "connected node": 14,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 131,
+                        "parent node index": 4,
+                        "output port index": 0,
+                        "connected node": 19,
+                        "connected input port index": 2
+                    },
+                    {
+                        "GID": 132,
+                        "parent node index": 4,
+                        "output port index": 0,
+                        "connected node": 24,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 133,
+                        "parent node index": 4,
+                        "output port index": 0,
+                        "connected node": 24,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 134,
+                        "parent node index": 6,
+                        "output port index": 0,
+                        "connected node": 8,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 135,
+                        "parent node index": 8,
+                        "output port index": 0,
+                        "connected node": 22,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 136,
+                        "parent node index": 9,
+                        "output port index": 0,
+                        "connected node": 13,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 137,
+                        "parent node index": 9,
+                        "output port index": 0,
+                        "connected node": 13,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 138,
+                        "parent node index": 9,
+                        "output port index": 0,
+                        "connected node": 10,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 139,
+                        "parent node index": 9,
+                        "output port index": 0,
+                        "connected node": 16,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 140,
+                        "parent node index": 9,
+                        "output port index": 0,
+                        "connected node": 19,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 141,
+                        "parent node index": 9,
+                        "output port index": 0,
+                        "connected node": 19,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 142,
+                        "parent node index": 10,
+                        "output port index": 0,
+                        "connected node": 20,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 143,
+                        "parent node index": 11,
+                        "output port index": 0,
+                        "connected node": 10,
+                        "connected input port index": 2
+                    },
+                    {
+                        "GID": 144,
+                        "parent node index": 11,
+                        "output port index": 0,
+                        "connected node": 13,
+                        "connected input port index": 2
+                    },
+                    {
+                        "GID": 145,
+                        "parent node index": 11,
+                        "output port index": 0,
+                        "connected node": 17,
+                        "connected input port index": 2
+                    },
+                    {
+                        "GID": 146,
+                        "parent node index": 12,
+                        "output port index": 0,
+                        "connected node": 10,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 147,
+                        "parent node index": 13,
+                        "output port index": 0,
+                        "connected node": 12,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 148,
+                        "parent node index": 14,
+                        "output port index": 0,
+                        "connected node": 12,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 149,
+                        "parent node index": 14,
+                        "output port index": 0,
+                        "connected node": 18,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 150,
+                        "parent node index": 15,
+                        "output port index": 0,
+                        "connected node": 7,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 151,
+                        "parent node index": 17,
+                        "output port index": 0,
+                        "connected node": 20,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 152,
+                        "parent node index": 18,
+                        "output port index": 0,
+                        "connected node": 17,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 153,
+                        "parent node index": 19,
+                        "output port index": 0,
+                        "connected node": 18,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 154,
+                        "parent node index": 20,
+                        "output port index": 0,
+                        "connected node": 21,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 155,
+                        "parent node index": 21,
+                        "output port index": 0,
+                        "connected node": 22,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 156,
+                        "parent node index": 21,
+                        "output port index": 0,
+                        "connected node": 23,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 157,
+                        "parent node index": 22,
+                        "output port index": 0,
+                        "connected node": 15,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 158,
+                        "parent node index": 22,
+                        "output port index": 0,
+                        "connected node": 26,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 159,
+                        "parent node index": 23,
+                        "output port index": 0,
+                        "connected node": 15,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 160,
+                        "parent node index": 24,
+                        "output port index": 0,
+                        "connected node": 23,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 161,
+                        "parent node index": 25,
+                        "output port index": 0,
+                        "connected node": 24,
+                        "connected input port index": 2
+                    },
+                    {
+                        "GID": 162,
+                        "parent node index": 27,
+                        "output port index": 0,
+                        "connected node": 26,
+                        "connected input port index": 1
+                    }
+                ],
+                "GID": 6,
+                "flow view": {
+                    "drawings": [],
+                    "view size": [
+                        6400.0,
+                        4800.0
+                    ]
+                }
+            },
+            "GID": 1
+        }
+    ]
+}

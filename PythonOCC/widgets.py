@@ -1,7 +1,8 @@
-from NWENV import *
+from ryven.NWENV import *
 
 from qtpy.QtCore import Signal
 from qtpy.QtWidgets import QLineEdit
+
 
 class ImportFileNode_MainWidget(MWB, QLineEdit):
 
