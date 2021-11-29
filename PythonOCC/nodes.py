@@ -15,7 +15,10 @@ from OCC.Core.gp import \
     gp_DX, \
     gp_DY, \
     gp_DZ, \
-    gp_Circ
+    gp_Circ, \
+    gp_XOY, \
+    gp_YOZ, \
+    gp_ZOX
 
 from OCC.Core.BRep import \
     BRep_Tool
@@ -29,7 +32,8 @@ from OCC.Core.BRepBuilderAPI import \
 from OCC.Core.BRepPrimAPI import \
     BRepPrimAPI_MakeBox, \
     BRepPrimAPI_MakeSphere, \
-    BRepPrimAPI_MakeCylinder
+    BRepPrimAPI_MakeCylinder, \
+    BRepPrimAPI_MakeTorus
 
 from OCC.Core.BRepAdaptor import \
     BRepAdaptor_CompCurve
@@ -37,10 +41,14 @@ from OCC.Core.BRepAdaptor import \
 from OCC.Core.BRepAlgoAPI import \
     BRepAlgoAPI_Fuse, \
     BRepAlgoAPI_Common, \
-    BRepAlgoAPI_Cut
+    BRepAlgoAPI_Cut, \
+    BRepAlgoAPI_Section
 
 from OCC.Core.BRepOffsetAPI import \
     BRepOffsetAPI_MakePipe
+
+from OCC.Core.Geom import \
+    Geom_Circle
 
 from OCC.Core.GeomAbs import \
     GeomAbs_C2
@@ -79,6 +87,7 @@ from OCC.Core.TopoDS import \
     topods_Shell, \
     topods_Vertex, \
     topods_Wire, \
+    TopoDS_Wire, \
     topods_Solid, \
     topods_Compound, \
     topods_CompSolid
@@ -95,7 +104,8 @@ from OCC.Extend.TopologyUtils import \
     TopologyExplorer
 
 from OCCUtils.Common import \
-    filter_points_by_distance
+    filter_points_by_distance, \
+    curve_length
 
 # 3D Viewer ------------------------------------------
 
@@ -385,6 +395,50 @@ class Ax2_Node(GpNodeBase):
         point, dir_ = self.get_inputs()
         self.set_output_val(0, gp_Ax2(point, dir_))
 
+class XOY_Node(GpNodeBase):
+    """
+    Generates Ax Z____-
+    """
+
+    title = 'AxZ'
+
+    init_outputs = [
+        NodeOutputBP(),
+    ]
+
+    def place_event(self):
+        axz = gp_XOY()
+        self.set_output_val(0, axz)
+
+class YOZ_Node(GpNodeBase):
+    """
+    Generates Ax X____-
+    """
+
+    title = 'AxX'
+
+    init_outputs = [
+        NodeOutputBP(),
+    ]
+
+    def place_event(self):
+        axx = gp_YOZ()
+        self.set_output_val(0, axx)
+
+class ZOX_Node(GpNodeBase):
+    """
+    Generates Ax Y____-
+    """
+
+    title = 'AxY'
+
+    init_outputs = [
+        NodeOutputBP(),
+    ]
+
+    def place_event(self):
+        axy = gp_ZOX()
+        self.set_output_val(0, axy)
 
 class Pln_Node(GpNodeBase):
     """
@@ -562,6 +616,9 @@ Gp_nodes = [
     DY_Node,
     DZ_Node,
     Ax2_Node,
+    XOY_Node,
+    YOZ_Node,
+    ZOX_Node,
     Pln_Node,
     Trsf_Node,
     Move2pts_Node,
@@ -696,6 +753,8 @@ class DiscretizeWire_Node(BrepBuilderAPINodeBase):
     def update_event(self, inp=-1):
         wire, nbpts = self.get_inputs()
         pnts = []  # points to create bsplines
+        if isinstance(wire, TopoDS_Edge):
+            wire = BRepBuilderAPI_MakeWire(wire).Wire()
         curve_adapt = BRepAdaptor_CompCurve(wire)
         # print(curve_adapt)
         _lbound, _ubound = curve_adapt.FirstParameter(), curve_adapt.LastParameter()
@@ -706,11 +765,36 @@ class DiscretizeWire_Node(BrepBuilderAPINodeBase):
         self.set_output_val(0, pnts)
         # print(tmp)
 
+class CurveLength_Node(BrepBuilderAPINodeBase):
+    """
+    Curve Length__________-
+    o_Wire/Edge(L)________-
+    """
+
+    title = 'CurveLength'
+
+    init_inputs = [
+        NodeInputBP('Wire/Edge', dtype=dtypes.Data(size='s')),
+    ]
+
+    init_outputs = [
+        NodeOutputBP(),
+    ]
+
+    def update_event(self, inp=-1):
+        lengths = []
+        for curve in self.get_inputs():
+            lengths.append(curve_length(curve))
+        self.set_output_val(0, lengths)
+        # print(tmp)
+
+
 BRepBuilderAPI_nodes = [
     TwoPtsEdge_Node,
     Wire_Node,
     WireFillet2d_Node,
     DiscretizeWire_Node,
+    CurveLength_Node,
 ]
 # -------------------------------------------
 
@@ -870,11 +954,37 @@ class Cylinder_Node(BrepPrimAPINodeBase):
         cylinder = BRepPrimAPI_MakeCylinder(axe, radius, length).Shape()
         self.set_output_val(0, cylinder)
 
+class Torus_Node(BrepPrimAPINodeBase):
+    """
+    Generates torus__________-
+    o_Ax2____________________-
+    o_Distance center/center_-
+    o_Radius_________________-
+    """
+
+    title = 'torus'
+
+    init_inputs = [
+        NodeInputBP('axe', dtype=dtypes.Data(size='s')),
+        NodeInputBP('distance', dtype=dtypes.Data(size='s')),
+        NodeInputBP('radius', dtype=dtypes.Data(size='s')),
+    ]
+
+    init_outputs = [
+        NodeOutputBP(),
+    ]
+
+    def update_event(self, inp=-1):
+        axe, distance, radius = self.get_inputs()
+        torus = BRepPrimAPI_MakeTorus(axe, distance, radius).Shape()
+        self.set_output_val(0, torus)
+
 
 BRepPrimAPI_nodes = [
     Box_Node,
     Sphere_Node,
     Cylinder_Node,
+    Torus_Node,
 ]
 # -------------------------------------------
 
@@ -977,11 +1087,49 @@ class Cut_Node(BrepAlgoAPINodeBase):
             cut_shp = BRepAlgoAPI_Cut(basis, cutter).Shape()
             self.set_output_val(0, cut_shp)
 
+class Section_Node(BrepAlgoAPINodeBase):
+    """
+    Generates Sections_______-
+    o_Basis__________________-
+    o_Cutter (or list)_______-
+    """
+
+    title = 'section'
+
+    init_inputs = [
+        NodeInputBP('Basis', dtype=dtypes.Data(size='s')),
+        NodeInputBP('Cutter', dtype=dtypes.Data(size='s')),
+    ]
+    init_outputs = [
+        NodeOutputBP(),
+    ]
+
+    def update_event(self, inp=-1):
+        basis, cutter = self.get_inputs()
+        if type(cutter) is list and type(basis) is not list:
+            count = len(cutter)
+            cut_shps = {}
+            ijk = 0
+            cut_shps[ijk] = BRepAlgoAPI_Section(basis, cutter[0]).Shape()
+            for i in range(1, count):
+                ijk += 1
+                cut_shps[ijk] = BRepAlgoAPI_Section(cut_shps[ijk - 1], cutter[i]).Shape()
+            self.set_output_val(0, cut_shps[ijk])
+        elif type(basis) is list and type(cutter) is not list:
+            cut_shps = []
+            for b in basis:
+                cut_shps.append(BRepAlgoAPI_Section(b, cutter).Shape())
+            self.set_output_val(0, cut_shps)
+        else:
+            cut_shp = BRepAlgoAPI_Section(basis, cutter).Shape()
+            self.set_output_val(0, cut_shp)
+
 
 BRepAlgoAPI_nodes = [
     Fuse_Node,
     Common_Node,
     Cut_Node,
+    Section_Node,
 ]
 
 # -------------------------------------------
@@ -1032,10 +1180,43 @@ BRepFilletAPI_nodes = [
 
 # GEOMAPI------------------------------------
 
+class GeomNodeBase(PythonOCCNodeBase):
+    color = '#c91604'
+
+class Circle_Node(GeomNodeBase):
+    """
+    Draw circle______________-
+    o_Ax2____________________-
+    o_Radius_________________-
+    """
+
+    title = 'Circle'
+
+    init_inputs = [
+        NodeInputBP('Ax2', dtype=dtypes.Data(size='s')),
+        NodeInputBP('Radius', dtype=dtypes.Data(size='s')),
+    ]
+    init_outputs = [
+        NodeOutputBP(),
+    ]
+
+    def update_event(self, inp=-1):
+        axis, radius  = self.get_inputs()
+        circle = Geom_Circle(axis, radius)
+        self.set_output_val(0, circle)
+
+Geom_nodes = [
+    Circle_Node,
+]
+
+# -------------------------------------------
+
+# GEOMAPI------------------------------------
+
 class GeomAPINodeBase(PythonOCCNodeBase):
     color = '#ff4633'
 
-class PointsSurface_Node(BrepFilletAPINodeBase):
+class PointsSurface_Node(GeomAPINodeBase):
     """
     Generates surface________-
     o_List of points_________-
@@ -1045,17 +1226,15 @@ class PointsSurface_Node(BrepFilletAPINodeBase):
 
     init_inputs = [
         NodeInputBP('points', dtype=dtypes.Data(size='s')),
-        NodeInputBP('Nada', dtype=dtypes.Data(size='s')),
     ]
     init_outputs = [
         NodeOutputBP(),
     ]
 
     def update_event(self, inp=-1):
-        lists_, nada = self.get_inputs()
         count = 0
         pts = {}
-        for l in lists_:
+        for l in self.get_inputs():
             pts[count] = l
             nbpts = len(l)
             count += 1
@@ -1675,6 +1854,7 @@ export_nodes(
     *BRepPrimAPI_nodes,
     *BRepAlgoAPI_nodes,
     *BRepFilletAPI_nodes,
+    *Geom_nodes,
     *GeomAPI_nodes,
     *TopExplorer_nodes,
     *Display_nodes,
