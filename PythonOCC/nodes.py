@@ -1150,23 +1150,24 @@ class Section_Node(BrepAlgoAPINodeBase):
 
     def update_event(self, inp=-1):
         basis, cutter = self.get_inputs()
-        if type(cutter) is list and type(basis) is not list:
-            count = len(cutter)
-            cut_shps = {}
-            ijk = 0
-            cut_shps[ijk] = BRepAlgoAPI_Section(basis, cutter[0]).Shape()
-            for i in range(1, count):
-                ijk += 1
-                cut_shps[ijk] = BRepAlgoAPI_Section(cut_shps[ijk - 1], cutter[i]).Shape()
-            self.set_output_val(0, cut_shps[ijk])
-        elif type(basis) is list and type(cutter) is not list:
-            cut_shps = []
-            for b in basis:
-                cut_shps.append(BRepAlgoAPI_Section(b, cutter).Shape())
-            self.set_output_val(0, cut_shps)
-        else:
-            cut_shp = BRepAlgoAPI_Section(basis, cutter).Shape()
-            self.set_output_val(0, cut_shp)
+        if None not in (basis, cutter):
+            if type(cutter) is list and type(basis) is not list:
+                count = len(cutter)
+                cut_shps = {}
+                ijk = 0
+                cut_shps[ijk] = BRepAlgoAPI_Section(basis, cutter[0]).Shape()
+                for i in range(1, count):
+                    ijk += 1
+                    cut_shps[ijk] = BRepAlgoAPI_Section(cut_shps[ijk - 1], cutter[i]).Shape()
+                self.set_output_val(0, cut_shps[ijk])
+            elif type(basis) is list and type(cutter) is not list:
+                cut_shps = []
+                for b in basis:
+                    cut_shps.append(BRepAlgoAPI_Section(b, cutter).Shape())
+                self.set_output_val(0, cut_shps)
+            else:
+                cut_shp = BRepAlgoAPI_Section(basis, cutter).Shape()
+                self.set_output_val(0, cut_shp)
 
 
 BRepAlgoAPI_nodes = [
