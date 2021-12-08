@@ -213,7 +213,7 @@ class PythonOCCNodeBase_DynamicInputs(PythonOCCNodeBase):
 
 
 class GpNodeBase(PythonOCCNodeBase):
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#5e0a91'
 
 
@@ -652,7 +652,7 @@ Gp_nodes = [
 
 
 class BrepBuilderAPINodeBase(PythonOCCNodeBase):
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#DAA520'
 
 
@@ -838,7 +838,7 @@ BRepBuilderAPI_nodes = [
 
 
 class BrepOffsetAPINodeBase(PythonOCCNodeBase):
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#aabb44'
 
 
@@ -920,7 +920,7 @@ BRepOffsetAPI_nodes = [
 
 
 class BrepPrimAPINodeBase(PythonOCCNodeBase):
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#aabb44'
 
 
@@ -1039,7 +1039,7 @@ BRepPrimAPI_nodes = [
 
 
 class BrepAlgoAPINodeBase(PythonOCCNodeBase):
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#ab0c36'
 
 
@@ -1189,7 +1189,7 @@ BRepAlgoAPI_nodes = [
 
 
 class BrepFilletAPINodeBase(PythonOCCNodeBase):
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#e0149c'
 
 
@@ -1236,7 +1236,7 @@ BRepFilletAPI_nodes = [
 # GEOMAPI------------------------------------
 
 class GeomNodeBase(PythonOCCNodeBase):
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#c91604'
 
 class Circle_Node(GeomNodeBase):
@@ -1270,7 +1270,7 @@ Geom_nodes = [
 # GEOMAPI------------------------------------
 
 class GeomAPINodeBase(PythonOCCNodeBase):
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#ff4633'
 
 class PointsSurface_Node(GeomAPINodeBase):
@@ -1322,7 +1322,7 @@ class TopExplorer_Node(PythonOCCNodeBase):
     """
 
     title = 'topexp'
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#FF00FF'
 
     init_inputs = [
@@ -1429,7 +1429,7 @@ TopExplorer_nodes = [
 
 
 class DisplayNodeBase(PythonOCCNodeBase):
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#3355dd'
 
 
@@ -1526,7 +1526,7 @@ class List_Node(PythonOCCNodeBase_DynamicInputs):
     """
 
     title = 'List'
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#000000'
 
     init_inputs = [
@@ -1549,7 +1549,7 @@ class ListLength_Node(PythonOCCNodeBase):
     """
 
     title = 'ListLength'
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#000000'
 
     init_inputs = [
@@ -1576,7 +1576,7 @@ class FlattenList_Node(PythonOCCNodeBase):
     """
 
     title = 'FlattenList'
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#000000'
 
     init_inputs = [
@@ -1610,7 +1610,7 @@ class ListItem_Node(PythonOCCNodeBase):
     """
 
     title = 'ListItem'
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#000000'
 
     init_inputs = [
@@ -1635,7 +1635,7 @@ class RepeatData_Node(PythonOCCNodeBase):
     """
 
     title = 'RepeatData'
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#000000'
 
     init_inputs = [
@@ -1668,7 +1668,7 @@ class Serie_Node(PythonOCCNodeBase):
     """
 
     title = 'Serie'
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#000000'
 
     init_inputs = [
@@ -1699,7 +1699,7 @@ class ShiftList_Node(PythonOCCNodeBase):
     """
 
     title = 'ShiftLIst'
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#000000'
 
     init_inputs = [
@@ -1740,7 +1740,7 @@ Tools_nodes = [
 
 
 class DataExchangeNodeBase(PythonOCCNodeBase):
-    verion = 'v0.1'
+    version = 'v0.1'
     color = '#6b6767'
 
 
