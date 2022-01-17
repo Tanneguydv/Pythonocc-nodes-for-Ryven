@@ -103,6 +103,9 @@ from OCC.Core.BRepFilletAPI import \
 from OCC.Extend.TopologyUtils import \
     TopologyExplorer
 
+from OCC.Extend.ShapeFactory import \
+    get_oriented_boundingbox
+
 from OCCUtils.Common import \
     filter_points_by_distance, \
     curve_length
@@ -1312,7 +1315,7 @@ GeomAPI_nodes = [
 
 # -------------------------------------------
 
-# TOPOLOGY EXPLORER--------------------------
+# SHAPE ANALYSIS --------------------------
 
 
 class TopExplorer_Node(PythonOCCNodeBase):
@@ -1418,8 +1421,34 @@ class TopExplorer_Node(PythonOCCNodeBase):
         self.set_output_val(7, compsolids)
 
 
-TopExplorer_nodes = [
+class BoundingBox_Node(PythonOCCNodeBase):
+    """
+    Bounding Box________-
+    o_Shape__________________-
+    """
+
+    title = 'bounding box'
+    version = 'v0.1'
+    color = '#FF00FF'
+
+    init_inputs = [
+        NodeInputBP('shape', dtype=dtypes.Data(size='s')),
+    ]
+    init_outputs = [
+        NodeOutputBP('box'),
+    ]
+
+    def update_event(self, inp=-1):
+        bboxes = []
+        for shape in self.get_inputs():
+            aBaryCenter, [aHalfX, aHalfY, aHalfZ], aBox = get_oriented_boundingbox(shape)
+            bboxes.append(aBox)
+        self.set_output_val(0, bboxes)  # TODO make it work for list
+
+
+Shape_Analysis_nodes = [
     TopExplorer_Node,
+    BoundingBox_Node,
 ]
 
 
@@ -1913,12 +1942,39 @@ class ImportStl_Node(DataExchangeNodeBase):
     def set_state(self, data, version):
         self.string = data['string']
 
+class ExportGcode_Node(DataExchangeNodeBase):
+    """
+    Generates Gcode______-
+    o_List of point______-
+    o_Name_______________-
+    o_Speed______________-
+    """
+
+    title = 'ExportGcode'
+
+    init_inputs = [
+        NodeInputBP('points', dtype=dtypes.Data(size='s')),
+        NodeInputBP('name', dtype=dtypes.Data(size='s')),
+        NodeInputBP('speed', dtype=dtypes.Data(size='s')),
+    ]
+
+    init_outputs = [
+        NodeOutputBP(),
+    ]
+
+    def update_event(self, inp=-1):
+        points, filename, speed = self.get_inputs()
+        with open(str(filename)+'.gcode', 'w') as file:
+            for point in points:
+                file.write('G1 X' + str(point.X()) + ' Y' + str(point.Y()) + ' Z' + str(point.Z()) + ' F' + str(speed) + '\n')
+
 
 DataExchange_nodes = [
     ExportStep_Node,
     ImportStep_Node,
     ExportStl_Node,
     ImportStl_Node,
+    ExportGcode_Node,
 ]
 
 
@@ -1934,7 +1990,7 @@ export_nodes(
     *BRepFilletAPI_nodes,
     *Geom_nodes,
     *GeomAPI_nodes,
-    *TopExplorer_nodes,
+    *Shape_Analysis_nodes,
     *Display_nodes,
     *Tools_nodes,
     *DataExchange_nodes,
