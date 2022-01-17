@@ -63,7 +63,7 @@ The functions currently implemented are:
 
 `Tools_nodes = List_Node, ListLength_Node, FlattenList_Node, ListItem_Node, RepeatData_Node, Serie_Node, ShiftList_Node,`
 
-`DataExchange_nodes = ExportStep_Node, ImportStep_Node, ExportStl_Node, ImportStl_Node,`
+`DataExchange_nodes = ExportStep_Node, ImportStep_Node, ExportStl_Node, ImportStl_Node, ExportGcode_Node`
 
 Each "nodes" family is a class with a color attributed. Node names are correspond to the functions from Pythonocc.
 
