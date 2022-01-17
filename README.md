@@ -30,6 +30,11 @@ another example:
 ![torus_example](https://user-images.githubusercontent.com/81742654/134700246-54ce5366-cb8f-43c1-acd9-fdd091cd802f.jpg)
 
 
+Other example : Convert your points to gcode
+![torus_gcode](https://user-images.githubusercontent.com/81742654/149762316-9d8fb268-cda9-432c-9263-c633bf921da6.jpg)
+see `torus_gcode.json file`
+
+
 It's just a beginning to explore the possibilities given by matching the two, I've just coded simple functions to see how it works and how it should be to perform complex operations.
 
 ### Contribute !
