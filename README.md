@@ -13,6 +13,8 @@ Prerequisites:
 3. pythonocc-core: https://anaconda.org/conda-forge/pythonocc-core
 4. pythonocc-utils: https://github.com/tpaviot/pythonocc-utils 
 
+Easy install solution for beginners : https://github.com/Tanneguydv/Pythonocc-nodes-for-Ryven/discussions/13#discussioncomment-1990881
+
 ### Usage
 
 You just have to import the `nodes.py` file in Ryven.
