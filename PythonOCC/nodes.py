@@ -112,6 +112,7 @@ from OCCUtils.Common import \
 
 # 3D Viewer ------------------------------------------
 
+from datetime import datetime
 from OCC.Display.SimpleGui import init_display
 display, start_display, add_menu, add_function_to_menu = init_display()
 add_menu('View')
@@ -156,6 +157,16 @@ add_function_to_menu('View', Front_View)
 add_function_to_menu('View', Right_View)
 add_function_to_menu('View', Bottom_View)
 add_function_to_menu('View', Rear_View)
+
+add_menu('Screenshot')
+
+
+def Save_Screenshot():
+    screenshot_OCC_name = str(datetime.now().strftime("%Y-%m-%d_%H-%M-%S")) + '_screenshot.jpg'
+    display.ExportToImage(screenshot_OCC_name)
+
+
+add_function_to_menu('Screenshot', Save_Screenshot)
 
 # -----------------------------------------------------
 # Base Classes
