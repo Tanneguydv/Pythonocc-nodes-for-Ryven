@@ -10,7 +10,7 @@ class Box_Node(BrepPrimAPINodeBase):		# explicit class name(parent class name)
     o_Height______________-					#it indicates what inputs are expected
     """
     init_inputs = [
-        NodeInputBP(dtype=dtypes.Data(size='s')),		# number of inputs ollowing what your function needs
+        NodeInputBP(dtype=dtypes.Data(size='s')),		# number of inputs following what your function needs
         NodeInputBP(dtype=dtypes.Data(size='s')),
         NodeInputBP(dtype=dtypes.Data(size='s')),
     ]
