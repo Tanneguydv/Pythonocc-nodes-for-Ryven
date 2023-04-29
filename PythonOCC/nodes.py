@@ -110,8 +110,12 @@ from OCCUtils.Common import \
     filter_points_by_distance, \
     curve_length
 
+from OCCUtils.edge import Edge
+
+
 # 3D Viewer ------------------------------------------
 
+from datetime import datetime
 from OCC.Display.SimpleGui import init_display
 display, start_display, add_menu, add_function_to_menu = init_display()
 add_menu('View')
@@ -156,6 +160,16 @@ add_function_to_menu('View', Front_View)
 add_function_to_menu('View', Right_View)
 add_function_to_menu('View', Bottom_View)
 add_function_to_menu('View', Rear_View)
+
+add_menu('Screenshot')
+
+
+def Save_Screenshot():
+    screenshot_OCC_name = str(datetime.now().strftime("%Y-%m-%d_%H-%M-%S")) + '_screenshot.jpg'
+    display.ExportToImage(screenshot_OCC_name)
+
+
+add_function_to_menu('Screenshot', Save_Screenshot)
 
 # -----------------------------------------------------
 # Base Classes
@@ -629,6 +643,32 @@ class MidPoint_Node(GpNodeBase):
         self.set_output_val(0, midpoint)
 
 
+class Get_dir_from_edge_Node(GpNodeBase):
+    """
+    Dir from Edge________-
+    o_Edge_______________-
+    """
+
+    title = 'DirfromEdge'
+
+    init_inputs = [
+        NodeInputBP('Edge', dtype=dtypes.Data(size='s')),
+    ]
+
+    init_outputs = [
+        NodeOutputBP(),
+    ]
+
+    def update_event(self, inp=-1):
+        for edge in self.get_inputs():
+            edg = Edge(edge)
+            first_point = BRep_Tool.Pnt(edg.first_vertex())
+            last_point = BRep_Tool.Pnt(edg.last_vertex())
+            dir_edge = gp_Dir(last_point.X() - first_point.X(), last_point.Y() - first_point.Y(),
+                              last_point.Z() - first_point.Z())
+        self.set_output_val(0, dir_edge)
+
+
 Gp_nodes = [
     Pnt_Node,
     DeconstructPnt_Node,
@@ -646,6 +686,7 @@ Gp_nodes = [
     Trsf_Node,
     Move2pts_Node,
     MidPoint_Node,
+    Get_dir_from_edge_Node,
 ]
 
 

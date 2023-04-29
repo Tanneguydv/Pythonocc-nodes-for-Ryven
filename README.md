@@ -47,7 +47,7 @@ The functions currently implemented are:
 
 `Gp_nodes = Pnt_Node, DeconstructPnt_Node, PointZero_Node,Dir_Node, Vec_Node, DX_Node, DY_Node, DZ_Node,Ax2_Node, Pln_Node, Trsf_Node, Move2pts_Node, MidPoint_Node,`
 
-`BRepBuilderAPI_nodes = TwoPtsEdge_Node, Wire_Node, WireFillet2d_Node, DiscretizeWire_Node,`
+`BRepBuilderAPI_nodes = TwoPtsEdge_Node, Wire_Node, WireFillet2d_Node, DiscretizeWire_Node, Get_dir_from_edge_Node`
 
 `BRepOffsetAPI_nodes = Pipe_Node,`
 

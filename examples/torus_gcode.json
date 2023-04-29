@@ -5,8 +5,8 @@
     },
     "required packages": [
         {
-            "name": "dev",
-            "dir": "D:/"
+            "name": "PythonOCC",
+            "dir": "C:/Users/nutri/projects/ryven projects/Pythonocc-nodes-for-Ryven/PythonOCC"
         }
     ],
     "scripts": [
