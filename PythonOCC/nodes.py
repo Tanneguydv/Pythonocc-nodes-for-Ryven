@@ -122,7 +122,8 @@ from OCCUtils.Common import \
     filter_points_by_distance, \
     curve_length
 
-from OCCUtils.edge import Edge
+# TODO: Edge import causes crash
+# from OCCUtils.edge import Edge
 
 
 # 
@@ -759,6 +760,9 @@ class Get_dir_from_edge_Node(GpNodeBase):
     ]
 
     def update_event(self, inp=-1):
+        print('ERROR - EDGE IS BROKEN')
+        return
+
         for edge in self.get_inputs():
             edg = Edge(edge)
             first_point = BRep_Tool.Pnt(edg.first_vertex())
