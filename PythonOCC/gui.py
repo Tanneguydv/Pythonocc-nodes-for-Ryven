@@ -41,7 +41,7 @@ class GuiBuilder:
                 for i, widget_name in enumerate(input_widgets)
                 if widget_name is not None
             }
-            if not isinstance(cls.GUI, PythonOCCNodeGuiBase):
+            if not issubclass(cls.GUI, PythonOCCNodeGuiBase):
                 # override GUI class
                 class AutoInputWidgets_NodeGui(PythonOCCNodeGuiBase):
                     init_input_widgets = inp_widgets
@@ -59,7 +59,7 @@ class GuiBuilder:
 # 
 
 
-class PyOCCBase_DynamicImportsGui(PythonOCCNodeGuiBase):
+class PyOCCBase_DynamicInputsGui(PythonOCCNodeGuiBase):
     def __init__(self, params):
         super().__init__(params)
 
@@ -73,7 +73,6 @@ class PyOCCBase_DynamicImportsGui(PythonOCCNodeGuiBase):
         self.num_inputs = len(self.node.inputs)
         # the actions are restrored automatically
 
-        # for debugging only
         self.actions['remove input'] = {
             i: {
                 'method': self.remove_operand_input,
@@ -142,7 +141,7 @@ class DisplayNodeGui(PythonOCCNodeGuiBase):
     color = '#3355dd'
 
 
-class ListGui(PythonOCCNodeGuiBase):
+class ListGui(PyOCCBase_DynamicInputsGui):
     color = '#000000'
 
 
@@ -227,7 +226,7 @@ class ImportFileNode_Gui(NodeGUI):
 
 export_guis([
     PythonOCCNodeGuiBase,
-    PyOCCBase_DynamicImportsGui,
+    PyOCCBase_DynamicInputsGui,
     GuiBuilder,
 
     GpNodeGui,

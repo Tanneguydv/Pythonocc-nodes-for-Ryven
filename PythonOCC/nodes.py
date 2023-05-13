@@ -248,7 +248,7 @@ class PythonOCCNodeBase(Node):
 
 class PythonOCCNodeBase_DynamicInputs(PythonOCCNodeBase):
 
-    GUI = guis.PyOCCBase_DynamicImportsGui
+    GUI = guis.PyOCCBase_DynamicInputsGui
 
     num_init_inputs = 0
 
